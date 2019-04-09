@@ -69,45 +69,51 @@ html, body {
 
 strong {
 	font-family: 'Dancing Script', cursive;
-	font-size: 40px;
+	font-size: 75px;
 	color: #79a9b4;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Muli', sans-serif;
 	letter-spacing: 1px;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	
 }
 
 h3 {
 	font-size: 20px;
 	color: @main-color;
+	text-align: center;
+    margin-top: 20px;
+}
+
+h2{
+	font-size: 40px;
 }
 
 .container {
 width: 1100px;
 margin: auto;
-border: 1px solid red;
+// border: 1px solid red;
 } // container
 
 .navigation{
 display: flex;
 align-items: center;
-border: 1px solid red;
+// border: 1px solid red;
 
 nav {
 justify-content: space-between;
 margin: 40px;
 width:100%;
 display: flex;
-border: 1px solid red;
+// border: 1px solid red;
 }
 a {
 text-decoration: none;
 color: @main-color;
 font-size: 20px;
-border: 1px solid red;
+// border: 1px solid red;
 }
 
 a:hover {
@@ -124,24 +130,49 @@ width:100%;
 display: flex;
 justify-content: space-around;
 border-bottom: 2px dashed @main-color;
-border: 1px solid red;
+// border: 1px solid red;
 
 .left-content{
 width: 45%;
-border: 1px solid red;
+// border: 1px solid red;
 }
 
 .right-content {
 width: 45%;
 text-align: center;
-border: 1px solid red;
+// border: 1px solid red;
 }
 
 img {
 width: 360px;
 border-radius: 76px;
 box-shadow: 0px 14px 10px darkgray;
-border: 1px solid red;
+// border: 1px solid red;
 
 }
 } //header
+
+.main-content {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	// border: 1px solid red;
+	.about-section {
+		width: 45%;
+		// border: 1px solid red;
+	}
+
+	.strengths-section {
+		width: 45%;
+		// border: 1px solid red;
+	}
+
+
+
+} // main-content
+
+footer{
+width: 100%;
+text-align: center;
+padding: 20px;
+}
