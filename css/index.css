@@ -150,69 +150,74 @@ h6 {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
+h2 {
+  font-size: 40px;
+}
 h3 {
   font-size: 20px;
   color: #79a9b4;
   text-align: center;
   margin-top: 20px;
 }
-h2 {
-  font-size: 40px;
+h4 {
+  color: #79a9b4;
 }
 .container {
   width: 1100px;
   margin: auto;
 }
-.navigation {
+.container .navigation {
   display: flex;
   align-items: center;
 }
-.navigation nav {
+.container .navigation nav {
   justify-content: space-between;
   margin: 40px;
   width: 100%;
   display: flex;
 }
-.navigation a {
+.container .navigation a {
   text-decoration: none;
   color: #79a9b4;
   font-size: 20px;
 }
-.navigation a:hover {
+.container .navigation a:hover {
   text-decoration: underline;
   color: #2F3232;
 }
-header {
+.container header {
   padding: 20px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   border-bottom: 2px dashed #79a9b4;
 }
-header .left-content {
+.container header .left-content {
   width: 45%;
 }
-header .right-content {
+.container header .right-content {
   width: 45%;
   text-align: center;
 }
-header img {
+.container header img {
   width: 360px;
   border-radius: 76px;
   box-shadow: 0px 14px 10px darkgray;
 }
-.main-content {
+.container .main-content {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  align-content: center;
 }
-.main-content .about-section {
+.container .main-content .about-section {
   width: 45%;
 }
-.main-content .strengths-section {
+.container .main-content .skills-section {
   width: 45%;
+  margin-left: 10px;
 }
-footer {
+.container footer {
   width: 100%;
   text-align: center;
   padding: 20px;
