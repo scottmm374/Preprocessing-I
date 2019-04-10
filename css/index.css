@@ -186,7 +186,7 @@ h4 {
   color: #2F3232;
 }
 .container header {
-  padding: 20px;
+  padding: 69px 20px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -209,13 +209,25 @@ h4 {
   width: 100%;
   justify-content: space-around;
   align-content: center;
+  padding: 61px 20px;
+  border-bottom: 2px dashed #79a9b4;
 }
 .container .main-content .about-section {
-  width: 45%;
+  width: 59%;
 }
 .container .main-content .skills-section {
-  width: 45%;
+  width: 30%;
   margin-left: 10px;
+}
+.container .main-content .skills-section ul {
+  list-style: disc;
+}
+.container .main-content .skills-section ul li {
+  line-height: 2;
+}
+.container .work-history {
+  text-align: center;
+  padding: 50px 20px;
 }
 .container footer {
   width: 100%;

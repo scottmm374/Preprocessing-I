@@ -57,6 +57,7 @@ table {
 @outer-space: #2F3232;
 
 
+
 * {
     box-sizing: border-box;
 }
@@ -102,89 +103,93 @@ margin: auto;
 
 
 
-.navigation{
-display: flex;
-align-items: center;
-// border: 1px solid red;
+	.navigation{
+	display: flex;
+	align-items: center;
+
+		nav {
+		justify-content: space-between;
+		margin: 40px;
+		width:100%;
+		display: flex;
+		}
+
+		a {
+		text-decoration: none;
+		color: @main-color;
+		font-size: 20px;
+		}
+
+		a:hover {
+		text-decoration: underline;
+		color: @outer-space;
+		}
+
+	} // navigation
 
 
-
-nav {
-justify-content: space-between;
-margin: 40px;
-width:100%;
-display: flex;
-// border: 1px solid red;
-}
-a {
-text-decoration: none;
-color: @main-color;
-font-size: 20px;
-// border: 1px solid red;
-}
-
-a:hover {
-text-decoration: underline;
-color: @outer-space;
-}
-
-} // navigation
+	header {
+	padding: 69px 20px;
+	width:100%;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 2px dashed @main-color;
 
 
-header {
-padding: 20px;
-width:100%;
-display: flex;
-justify-content: space-around;
-border-bottom: 2px dashed @main-color;
-// border: 1px solid red;
+		.left-content{
+		width: 45%;
+		}
 
-.left-content{
-width: 45%;
-// border: 1px solid red;
-}
+		.right-content {
+		width: 45%;
+		text-align: center;
+		}
 
-.right-content {
-width: 45%;
-text-align: center;
-// border: 1px solid red;
-}
+		img {
+		width: 360px;
+		border-radius: 76px;
+		box-shadow: 0px 14px 10px darkgray;
+		}
 
-img {
-width: 360px;
-border-radius: 76px;
-box-shadow: 0px 14px 10px darkgray;
-// border: 1px solid red;
+	} //header
 
-}
-} //header
+	.main-content {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-content: center;
+	padding: 61px 20px;
+	border-bottom: 2px dashed @main-color;
 
-.main-content {
-display: flex;
-width: 100%;
-justify-content: space-around;
-align-content: center;
-// border: 1px solid red;
-.about-section {
-	width: 45%;
-	// border: 1px solid red;
-}
+		.about-section {
+			width: 59%;	
+		}
 
-.skills-section {
-	width: 45%;
-	margin-left: 10px;
+		.skills-section {
+			width: 30%;
+			margin-left: 10px;
 
-	// border: 1px solid red;
-}
+			ul{
+				list-style: disc;
 
+				li{
+					line-height: 2;
+				}
+			} // ul
 
+		} //skills-sectio
 
-} // main-content
+	} // main-content
 
-footer{
-width: 100%;
-text-align: center;
-padding: 20px;
-}
+	.work-history {
+		text-align: center;
+		padding: 50px 20px;
+	}
+
+	footer{
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	}
 
 } // container
