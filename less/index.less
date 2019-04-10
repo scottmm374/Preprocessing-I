@@ -56,7 +56,12 @@ table {
 @neptune: #79a9b4;
 @outer-space: #2F3232;
 
+// Mixins
 
+.border() {
+	padding: 20px 0;
+	border-bottom: 2px dashed @main-color;
+}
 
 * {
     box-sizing: border-box;
@@ -71,7 +76,7 @@ html, body {
 strong {
 	font-family: 'Dancing Script', cursive;
 	font-size: 75px;
-	color: #79a9b4;
+	color: @main-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -133,7 +138,7 @@ margin: auto;
 	width:100%;
 	display: flex;
 	justify-content: space-around;
-	border-bottom: 2px dashed @main-color;
+	.border;
 
 
 		.left-content{
@@ -159,7 +164,7 @@ margin: auto;
 	justify-content: space-around;
 	align-content: center;
 	padding: 61px 20px;
-	border-bottom: 2px dashed @main-color;
+	.border;
 
 		.about-section {
 			width: 59%;	
@@ -177,7 +182,7 @@ margin: auto;
 				}
 			} // ul
 
-		} //skills-sectio
+		} //skills-section
 
 	} // main-content
 
