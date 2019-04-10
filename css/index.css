@@ -162,6 +162,13 @@ h3 {
 h4 {
   color: #79a9b4;
 }
+ul {
+  list-style: disc;
+}
+.list1 {
+  background: #79a9b4;
+  background: radial-gradient(circle, #79a9b4 35%, #e2f5f9 100%);
+}
 .container {
   width: 1100px;
   margin: auto;
@@ -240,6 +247,7 @@ h4 {
   .container header .right-content {
     width: 100%;
     margin: 0 auto;
+    margin-top: 55px;
   }
 }
 .container header img {
@@ -296,6 +304,9 @@ h4 {
   padding: 20px 0;
   border-bottom: 2px dashed #79a9b4;
 }
+.container .work-edu .edu {
+  text-align: center;
+}
 @media (max-width: 500px) {
   .container .work-edu {
     width: 100%;
@@ -309,13 +320,15 @@ h4 {
   margin: 30px 0;
   padding: 25px;
   box-shadow: 0px 14px 10px darkgray;
-  line-height: 2;
 }
 @media (max-width: 500px) {
   .container .work-edu div {
     width: 100%;
     margin: 0 auto;
   }
+}
+.container .work-edu div li {
+  line-height: 2;
 }
 .container footer {
   width: 100%;
@@ -326,12 +339,6 @@ h4 {
   .container footer {
     width: 100%;
     margin: 0 auto;
+    margin-top: 55px;
   }
-}
-.container ul {
-  list-style: disc;
-}
-.container .list1 {
-  background: #79a9b4;
-  background: radial-gradient(circle, #79a9b4 35%, #e2f5f9 100%);
 }

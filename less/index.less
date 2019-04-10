@@ -48,7 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+
 
 // Variables
 @main-color: @neptune;
@@ -76,6 +76,8 @@ table {
 	padding: 61px 20px;
 	.border;
 }
+
+/* Set every element's box-sizing to border-box */
 
 * {
     box-sizing: border-box;
@@ -114,6 +116,15 @@ h4 {
 	color: @main-color;
 }
 
+ul{
+	list-style: disc;
+}
+
+.list1 {
+	.gradient;
+}
+
+
 
 
 .container {
@@ -136,12 +147,12 @@ margin: auto;
 		width:100%;
 		display: flex;
 
-		@media(max-width: 500px) {
-			width:100%;
-			flex-direction: column;
-			margin: auto;
-			align-items: center;
-	}
+			@media(max-width: 500px) {
+				width:100%;
+				flex-direction: column;
+				margin: auto;
+				align-items: center;
+			}
 		}
 
 		a {
@@ -168,21 +179,21 @@ margin: auto;
 
 
 	header {
-	// margin: 40px;
 	width:100%;
 	display: flex;
 	justify-content: space-evenly;
 	.border;
 
-	@media(max-width: 500px) {
-		width:100%;
-		flex-direction: column;
-		margin: auto;
-		align-items: center;
-}
+		@media(max-width: 500px) {
+			width:100%;
+			flex-direction: column;
+			margin: auto;
+			align-items: center;
+		}
 
 		.left-content{
 		width: 45%;
+
 			@media(max-width: 500px) {
 			width:100%;
 			margin: 0 auto;
@@ -196,9 +207,8 @@ margin: auto;
 			@media(max-width: 500px) {
 				width:100%;
 				margin: 0 auto;
-				}
-
-		
+				margin-top: 55px;
+			}
 		}
 
 		img {
@@ -207,13 +217,12 @@ margin: auto;
 		box-shadow: 0px 14px 10px darkgray;
 		align-items:  center;
 
-		@media(max-width: 500px) {
-			width:100%;
-			margin: 0 auto;
-			padding: 10px;
+			@media(max-width: 500px) {
+				width:100%;
+				margin: 0 auto;
+				padding: 10px;
 			}
 		}
-
 	} //header
 
 	.skills-content {
@@ -224,7 +233,7 @@ margin: auto;
 			flex-direction: column;
 			margin: auto;
 			align-items: center;
-	}
+		}
 
 		div {
 			width: 45%;
@@ -235,27 +244,29 @@ margin: auto;
 			@media(max-width: 500px) {
 				width:100%;
 				margin: 0 auto;
-				}
+			}
 
 				li{
 					line-height: 2;					
 				}
-			} // ul
-
-		 //skills-section
-
-	} // main-content
+		}
+	} // skills-content
 
 
 	.work-edu {
 		.alignment;
+
+		.edu {
+			text-align: center;
+		}
+		
 
 		@media(max-width: 500px) {
 			width:100%;
 			flex-direction: column;
 			margin: auto;
 			align-items: center;
-	}
+		}
 
 		div {
 			width: 45%;
@@ -266,30 +277,24 @@ margin: auto;
 			@media(max-width: 500px) {
 				width:100%;
 				margin: 0 auto;
-				}
+			}
 
 				li{
-			}	   line-height: 2;
+					line-height: 2;
+				}	
 		}
-	}	
+	}	// work-edu
 
 	footer{
 	width: 100%;
 	text-align: center;
 	padding: 20px;
 
-	@media(max-width: 500px) {
-		width:100%;
-		margin: 0 auto;
+		@media(max-width: 500px) {
+			width:100%;
+			margin: 0 auto;
+			margin-top: 55px;
 		}
-	}
-
-	ul{
-		list-style: disc;
-	}
-
-	.list1 {
-		.gradient;
-	}
+	} //footer
 
 } // container-end
